@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-image: url(/texture.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: 800px;
+}
+
+#cta{
+    background-image: url(/leaf.jpg);
+}
+
+
+/* hambuger */
+.hambuger{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hambuger-top,
+.hambuger-middle,
+.hambuger-bottom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+
+.hambuger-middle{
+    transform: translatey(7px);
+}
+
+.hambuger-bottom{
+    transform: translatey(14px);
+}
+
+.open{
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hambuger-top{
+    transform: rotate(45deg);
+    translateY: (6px);
+    translate: (6px);
+
+}
+
+.open .hambuger-middle{
+    display: none;
+}
+
+
+.open .hambuger-bottom{
+    transform: rotate(-45deg);
+    translateY: (6px);
+    translate: (-6px);
+
+}
+
