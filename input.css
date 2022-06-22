@@ -13,6 +13,13 @@ body{
 }
 
 
+/* menu */
+
+#menu{
+    background-image: url('/mountain.webp');
+}
+
+
 /* hambuger */
 .hambuger{
     cursor: pointer;
